@@ -1,0 +1,48 @@
+.profile {
+  background-color: aliceblue;
+  width: 500px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.description {
+  text-align: center;
+}
+
+.avatar {
+  width: 190px;
+  border-radius: 100px;
+  border: 3px solid blue;
+}
+
+.tag,
+.local {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #a8a8a8;
+}
+
+.soc-set {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  background-color: #a8a8a8;
+  border-radius: 50px;
+  margin-bottom: 30px;
+}
+
+.stats {
+  text-align: center;
+  display: flex;
+  gap: 10px;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

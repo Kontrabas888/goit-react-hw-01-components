@@ -1,0 +1,27 @@
+.transaction-history {
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  border-collapse: collapse;
+  width: 800px;
+}
+
+.transaction-history th {
+  background-color: #f2f2f2;
+  color: #ad8989;
+  padding: 10px;
+  text-align: left;
+}
+
+.transaction-history td {
+  border: 1px solid #dddddd;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.transaction-history tbody tr:nth-child(even) {
+  background-color: #938888;
+}
+
+.transaction-history tbody tr:hover {
+  background-color: #f5f5f5;
+}

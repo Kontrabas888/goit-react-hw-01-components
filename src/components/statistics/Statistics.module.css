@@ -1,0 +1,45 @@
+.statistic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stats-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  width: 500px;
+}
+
+.item {
+  background-color: #fff;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+}
+
+.stats-list li:nth-child(5n + 1) {
+  background-color: red;
+}
+
+.stats-list li:nth-child(5n + 2) {
+  background-color: blue;
+}
+
+.stats-list li:nth-child(5n + 3) {
+  background-color: green;
+}
+
+.stats-list li:nth-child(5n + 4) {
+  background-color: orange;
+}
+
+.stats-list li:nth-child(5n + 5) {
+  background-color: fuchsia;
+}
