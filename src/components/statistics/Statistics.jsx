@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import clsx from "clsx";
 import cssStatist from "../statistics/Statistics.module.css";
 
@@ -19,4 +20,15 @@ export const Statistics = ({ statistics }) => {
       </ul>
     </section>
   );
+};
+
+
+Statistics.propTypes = {
+  statistics: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+    })
+  ).isRequired,
 };
