@@ -2,11 +2,10 @@ import PropTypes from 'prop-types';
 import clsx from "clsx";
 import cssStatist from "../statistics/Statistics.module.css";
 
-export const Statistics = ({ statistics }) => {
+export const Statistics = ({ statistics, title }) => {
   return (
     <section className={cssStatist.statistic}>
-
-      <h2 className={cssStatist.title}>Upload stats</h2>
+      {title && <h2 className={cssStatist.title}>{title}</h2>}
 
         <ul className={cssStatist["stats-list"]}>
           {statistics.map((item, index) => (
@@ -25,7 +24,6 @@ export const Statistics = ({ statistics }) => {
   );
 };
 
-
 Statistics.propTypes = {
   statistics: PropTypes.arrayOf(
     PropTypes.shape({
@@ -34,4 +32,5 @@ Statistics.propTypes = {
       percentage: PropTypes.number.isRequired,
     })
   ).isRequired,
+  title: PropTypes.string,
 };
